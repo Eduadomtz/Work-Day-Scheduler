@@ -26,8 +26,8 @@ theTime();
 
 $('.saveBtn').click(function(){
     var textArea = $(this).siblings(".description").val();
-    var time = $(this).parent().attr("id");
-    localStorage.setItem(time, textArea);
+    var currentHour = $(this).parent().attr("id");
+    localStorage.setItem(currentHour, textArea);
 })
 
 $("#nine").val(localStorage.getItem("hour9"));
